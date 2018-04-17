@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>注册-XD</title>
+<style type="text/css"></style>
+</head>
+<body>
+  <div class="grid1_of_3" id="login-Reg">
+    <div class="btn_style">
+      <a href="index.html"><h2>西电网络协会</h2></a>
+    </div>
+    <div class="login_form">
+      <form  name="RegForm" method="post" action="php" onSubmit="return RegCheck(this)" autocomplete="off">
+        <span>用户名</span>
+        <input id="username" name="username" type="text" class="textbox" value="6位以上不含特殊字符" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '6位以上不含特殊字符';}">
+        <span class="top">密码</span>
+        <input id="password" name="password" type="password" value="" />
+        <span class="top">确认密码</span>
+        <input id="repass" name="repass" type="password" value="" />
+        <span class="top">邮箱</span>
+        <input id="email" name="email"type="text" value="" />
+        <span class="top">验证码</span>
+        <div class="code">
+          <input id="usercode" name="usercode" type="text" class="codebox" />
+          <div class="codeimg">图片</div>
+        </div>
+        <input type="submit" name="submit" value="注册" />
+        <div class="user_pass">
+          <a href="" class="forget_pass">忘记密码?</a>
+          <a href="login.html" class="not_user">现在登录?</a>
+        </div>
+      </form>
+    </div>
+    <div class="soc_icons">
+      <ul>
+        <li><a class="icon_1" href="#"></a></li>
+        <li><a class="icon_2" href="#"></a></li>
+        <li><a class="icon_3" href="#"></a></li>
+        <li><a class="icon_4" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+<script type="text/javascript" src=js/encode.js></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>日签模板</title>
+	<meta charset="utf-8">
+	<script src="js/jquery.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+	<script src="js/riqianmuban.js"></script>
+	<script>
+		$(document).ready( function(){
+                $("#saveimg").on("click", function(event) {
+                        event.preventDefault();
+                        html2canvas($(".main"), {
+                        allowTaint: true,
+                        taintTest: false,
+                        onrendered: function(canvas) {
+                            canvas.id = "mycanvas";
+                            document.body.appendChild(canvas);
+                            //生成base64图片数据
+                            var newImg = document.createElement("img");
+                            newImg.crossOrigin = "anonymous";
+                            var dataUrl = canvas.toDataURL();
+
+                            newImg.src =  dataUrl;
+                            SaveAs5(newImg.src);
+                            //document.body.appendChild(newImg);
+                        }
+                        
+                    });
+                }); 
+             
+        });
+        function SaveAs5(imgURL){
+        	var oPop = window.open(imgURL,"","width=1,height=1,top=5000,left=5000");
+        	for(;oPop.document.readyState!="complete";){
+        		if(oPop.document.readyState == "complete") break;
+        	}
+        	oPop.document.execCommand("SaveAs");oPop.close();
+        }
+         
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/riqianmuban.css">
+</head>
+<body>
+	<div class="main">
+		<div class="rightpart">
+			<p id="keyword">
+			</p>
+			<div class=authorcon>
+				<span id="author">
+				</span>
+			</div>
+		</div>
+		<div class="centerpart">
+			<div>
+				<span class="rows" id="row5"></span>
+				<span class="rows" id="row4"></span>
+				<span class="rows" id="row3"></span>	
+				<span class="rows" id="row2"></span>
+				<span class="rows" id="row1"></span>								
+			</div>
+		</div>
+		<div class="leftpart">
+			<span id="date">
+			</span>
+		</div>
+	</div>
+	<div id="someform">
+		<form action="" method="POST">
+			<label for="getkeyword">关键词（二字词语）</label>
+			<br>
+			<input class="inputs" id="input1" type="text" name="keyword">
+			<br>
+	    	<br>
+	    	<label for=getauthor>作者</label>
+	   		<br>
+	    	<input class="inputs" id="input2" type="author" name="email">
+	    	<br>
+	    	<br>	    					
+	    	<label for=getquote>引用正文（不超过50字）</label>
+	    	<br>
+	    	<textarea id="quote"></textarea>
+	    	<br>
+	    	<br>	    					
+	    	<input id="submit" type="button" value="提交">
+	    	<input id = "saveimg" type = "button" value = "保存图片">	    	
+		</form>
+	</div>
+</body>
+</html>

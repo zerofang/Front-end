@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+ul{
+	list-style: none;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+	display:block;
+}
+
+body{
+	background:#70B9B0;
+	width:100%;
+}
+
+/* login_form */
+@media screen and (min-width:600px){
+	.grid1_of_3{
+		position: absolute;
+		width:28%;
+		top:12%;
+		left:36%;
+		min-width: 350px;
+		margin:0 auto;
+		background: white;
+		letter-spacing:3px;
+		border: none;
+		-webkit-appearance: none;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+}
+
+.btn_style{
+	padding:17px 25px;
+	text-align: center;
+	color:#70B9B0;
+}
+
+.login_form{
+	padding:30px 30px 20px 30px;
+	background: rgba(255, 255, 255, 0.18);
+}
+
+.login_form span{
+	display: block;
+	color: #70B9B0;
+	font-size:1.2em;;
+	text-transform: capitalize;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.login_form span.top{
+	margin-top: 10px;
+}
+
+
+.login_form form input[type="text"]{
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	padding: 15px 15px;
+	display: block;
+	width: 88%;
+	outline: none;
+	color: #70B9B0;
+	font-size: 1.1em;
+	border:2px solid #70B9B0;
+	-webkit-appearance: none;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.login_form form input[type="password"]{
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	padding: 15px 15px;
+	display: block;
+	width: 88%;
+	background: rgba(255, 255, 255, 0.15);
+	outline: none;
+	color: #70B9B0;
+	font-size: 1.1em;
+	border:2px solid #70B9B0;
+	-webkit-appearance: none;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	-moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	-o-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.login_form form input.codebox{
+	width:30%;
+	float: left;
+}
+
+.login_form form .codeimg{
+	float: left;
+	padding:15px;
+	width:30%;
+	margin-left: 30px;
+	background: #70B9B0;
+	border:2px solid #70B9B0;
+	-webkit-appearance: none;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.code:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.login_form form input[type="submit"]{
+		font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    width:95.5%;
+    border: none;
+    outline: none;
+    margin-top:20px;
+		margin-bottom:20px;
+		padding:15px 15px;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+		background: #70B9B0;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+    -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+    -o-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/*.login_form form input[type="submit"]:hover{
+	background: #ACA4AF;
+}*/
+.login_form .user_pass .forget_pass{
+	float: left;
+	color:#70B9B0;
+}
+
+.login_form .user_pass .not_user{
+	float: right;
+	margin-right:5%;
+	text-align: center;
+	color:#70B9B0;
+}
+
+.login_form .user_pass:after{
+	clear:both;
+	content: '';
+	display: block;
+}
+
+/* start soc_icons */
+.soc_icons {
+	text-align:center;
+	padding: 15px 0;
+	background:#a4d8d2;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-o-border-radius:0px 0px 10px 10px;
+}
+.soc_icons ul li{
+	display:inline-block;
+	margin-left: 4px;
+}
+.soc_icons ul li:first-child{
+	margin-left: 0;
+}
+.soc_icons ul li a{
+	background: url('../images/soc_icons.png')  no-repeat;
+	display: block;
+	width: 24px;
+	height: 24px;
+	padding: 4px;
+}
+.soc_icons ul li a.icon_1{
+	background-position:0px 8px;
+}
+.soc_icons ul li a.icon_1:hover{
+	background-position: 0px -23px;
+}
+.soc_icons ul li a.icon_2{
+	background-position: -44px 8px;
+}
+.soc_icons ul li a.icon_2:hover{
+	background-position: -44px -24px;
+}
+.soc_icons ul li a.icon_3{
+	background-position: -88px 8px;
+}
+.soc_icons ul li a.icon_3:hover{
+	background-position: -88px -24px;
+}
+.soc_icons ul li a.icon_4{
+	background-position: -126px 8px;
+}
+.soc_icons ul li a.icon_4:hover{
+	background-position: -126px -22px;
+}
+
+@media screen and (max-width:600px){
+	.grid1_of_3{
+		width:80%;
+		min-width:340px;
+		display: table;
+		margin:20px auto;
+		background: white;
+		letter-spacing:3px;
+		border: none;
+		-webkit-appearance: none;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+}

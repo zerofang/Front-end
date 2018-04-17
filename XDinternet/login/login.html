@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>无标题文档</title>
+<style type="text/css"></style>
+</head>
+<body>
+  <div class="grid1_of_3" id="login-Reg">
+    <div class="btn_style">
+      <h2>西电网路协会</h2>
+    </div>
+    <div class="login_form">
+      <form name="LogForm" method="get" action="php" autocomplete="off" onSubmit="return LogCheck(this)">
+        <span>邮箱/用户名</span>
+        <input id="username" name="username" type="text" class="textbox" value="yourname@gmail.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'yourname@gmail.com';}">
+        <span class="top">密码</span>
+        <input id="password" name="password" type="password" />
+        <span class="top">验证码</span>
+        <div class="code">
+          <input id="usercode" name="usercode" type="text" class="codebox"/>
+          <div class="codeimg">图片</div>
+        </div>
+        <input name="submit" type="submit" value="登录" />
+      </form>
+      <div class="user_pass">
+        <a href="" class="forget_pass">忘记密码?</a>
+        <a href="regForm.html" class="not_user">现在注册?</a>
+      </div>
+    </div>
+    <div class="soc_icons">
+      <ul>
+        <li><a class="icon_1" href="#"></a></li>
+        <li><a class="icon_2" href="#"></a></li>
+        <li><a class="icon_3" href="#"></a></li>
+        <li><a class="icon_4" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+<script type="text/javascript" src=js/encode.js></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
